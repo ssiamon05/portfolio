@@ -1,0 +1,22 @@
+body {
+    font-family: 'Azeret Mono', monospace;
+    color: #fff;
+}
+
+h1 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+footer {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}

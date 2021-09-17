@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Sam Siamon">
+  <title>My Portfolio</title>
+  <!--CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body class="bg-dark">
+  <header>
+    <nav id='navbar' class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href='#about'>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class='nav-link' href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a href="files/Resume-Samuel-Siamon.pdf" download='Resume-Samuel-Siamon' target="_blank"><button
+            class="btn btn-outline-light" onmouseover="changeIconOver()" onmouseleave="changeIconLeave()"><img
+              id='download-icon' src="images/file_download_white_24dp.svg">My Resume</button></a>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-dark">
+    <div id='about' class="row text-center">
+      <h1>About Me</h1>
+      <p></p>
+    </div>
+    <br>
+    <div id='projects' class="row text-center">
+      <h1>My Projects</h1>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <a href="https://ssiamon05.github.io/tip_calculator/" target="_blank"><img src="images/tip-calc-project.png"
+                class="d-block w-100"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tip Calculator</h5>
+              <p>
+                Made using HTML, CSS, and JavaScript
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <a href="https://info340p2-pokemonproject.web.app" target="_blank"><img src="images/pokemon-project.png"
+                class="d-block w-100"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pokemon Project</h5>
+              <p>A group project made using React.js, APIs, and Firebase</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <br>
+      <div id='contact' class="row text-center">
+        <h1>Contact Me and Other Links</h1>
+        <div class="d-flex flex-row justify-content-evenly">
+          <div class="p-2 card">
+            <a href="mailto: swsiamon@gmail.com"><img id="email-img" src='images/email_black_24dp.svg'
+                class="img card-img" alt="email"></a>
+          </div>
+          <div class="p-2 card">
+            <a href="https://www.linkedin.com/in/samuelsiamon" target="_blank"><img id="linkdin-img"
+                src='images/2986200_linkdin_logo_media_social_icon.svg' class="img card-img" alt="linkdin"></a>
+          </div>
+          <div class="p-2 card">
+            <a href="https://github.com/ssiamon05" target="_blank"><img id="github-img"
+                src='images/394187_github_icon.svg' class="img card-img" alt="github"></a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer class="bg-dark text-center">Designed and coded by Sam Siamon</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
