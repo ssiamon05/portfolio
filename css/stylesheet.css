@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Azeret Mono', monospace;
     color: #fff;
@@ -10,9 +14,9 @@ h1 {
 }
 
 .card {
-    height: 100px;
-    width: 100px;
-    border-radius: 40px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
 }
 
 footer {
@@ -23,3 +27,39 @@ footer {
     text-decoration: none;
     color: #fff;
  } 
+
+ header {
+     border-bottom: 1px solid #fff;
+ }
+
+ #about {
+    padding: 0px 20px;
+ }
+
+ nav {
+     padding: 0px 20px;
+ }
+
+ #nav-items {
+     display:none;
+ }
+
+ @media (min-width: 768px) {
+    .card {
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+    }
+ }
+
+ @media (min-width: 992px) {
+    .card {
+        height: 100px;
+        width: 100px;
+        border-radius: 40px;
+    }
+
+    #nav-items {
+        display:flex;
+    }
+ }

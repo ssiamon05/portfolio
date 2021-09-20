@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -17,11 +17,13 @@
 
 <body class="bg-dark">
   <header>
-    <nav id='navbar' class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id='navbar' class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-center">
       <div class="navbar-brand">
-        <a id='name' href='#'><h2>Sam Siamon</h2></a>
+        <a id='name' href='#'>
+          <h2>Sam Siamon</h2>
+        </a>
       </div>
-      <div class="container-fluid">
+      <div id='nav-items' class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href='#about'>About</a>
@@ -42,9 +44,18 @@
   <main class="bg-dark">
     <div id='about' class="row text-center">
       <h1>About Me</h1>
-      <p>Section to be added at a later date.</p>
+      <div class='p-2 flex-column'>
+        <p>
+          Hi! I'm Sam! I am a recent graduate from the University of Washington. I graduated with a BA in mathematics
+          and a minor in informatics. I am a frontend developer and have experience with
+          HTML, CSS, JavaScript, Bootstrap, React.js, Firebase, and Git. I am always excited to learn new things and
+          work on my skills as a developer.
+        </p>
+      </div>
+      <div class='p-2 flex-column'>
+        <img src="" alt="">
+      </div>
     </div>
-    <br>
     <div id='projects' class="row text-center">
       <h1>My Projects</h1>
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -100,6 +111,10 @@
           <div class="p-2 card">
             <a href="https://github.com/ssiamon05" target="_blank"><img id="github-img"
                 src='images/394187_github_icon.svg' class="img card-img" alt="github"></a>
+          </div>
+          <div class="p-2 card">
+            <a href="files/Resume-Samuel-Siamon.pdf" download='Resume-Samuel-Siamon'><img id="resume-img"
+                src='images/file_present_black_24dp.svg' class="img card-img" alt="resume download"></a>
           </div>
         </div>
       </div>
