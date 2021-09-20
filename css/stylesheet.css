@@ -44,6 +44,10 @@ footer {
      display:none;
  }
 
+ .navbar-brand {
+    margin-right: 0rem;
+}
+
  @media (min-width: 768px) {
     .card {
         height: 70px;
@@ -62,4 +66,5 @@ footer {
     #nav-items {
         display:flex;
     }
+
  }
